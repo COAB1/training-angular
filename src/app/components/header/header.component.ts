@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-  <nav class="navbar">
+  <nav class="navbar is-dark">
 
   <!-- logo -->
   <div class="navbar-brand">
