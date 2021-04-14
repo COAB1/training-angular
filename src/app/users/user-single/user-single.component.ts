@@ -6,9 +6,16 @@ import { UsersModule } from '../users.module';
 @Component({
   selector: 'app-user-single',
   template: `
-    <p>
-      user-single works!
-    </p>
+    <section class="section">
+      <div class="container">
+      
+        <div class="card" *ngIf="user">
+          <img [src]="user.avatar_url">
+          <h2>{{ user.login }}</h2>
+        </div>
+      
+      </div>
+    </section>
   `,
   styles: [
   ]

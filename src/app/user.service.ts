@@ -14,7 +14,7 @@ export class UserService {
     return this.http.get(`${this.apiUrl}?per_page=18`);
   }
 
-  getUser(username: string){
-    return this.http.get(`${this.apiUrl}/users/${username}`)
+  getUser(username: string) {
+    return this.http.get(`${this.apiUrl}/${username}`); 
   }
 }
