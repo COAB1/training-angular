@@ -13,9 +13,18 @@ import { UserService } from '../../user.service';
 })
 export class UserListComponent implements OnInit {
 
-  constructor(private userService: UserService) { }
+  users;
+
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit(): void {
-  }
-
+    /* 
+    before ES6 was written like this 
+    this.userService.getUsers().subscribe(users => {
+      console.log(users); */
+    this.users = this.userService.getUsers();
+  };
 }
+
