@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/training-angular-123",
+    "public": "dist/training-angular",
     "ignore": [
       "firebase.json",
       "**/.*",
